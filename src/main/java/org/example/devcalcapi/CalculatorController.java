@@ -30,5 +30,10 @@ public class CalculatorController {
     public double divide(@RequestParam double a, @RequestParam double b) {
         return calculatorService.divide(a, b);
     }
+
+    @GetMapping("/ping")
+    public String ping() {
+        return "pong";
+    }
 }
 
